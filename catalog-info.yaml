@@ -1,0 +1,78 @@
+
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  title: Mini-Devops-Project
+  name: Mini-Devops-Project
+spec:
+  owner: eabdelghany
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/techdocs-ref: dir:./artifactory
+  title: Artifactory
+  name: artifactory
+spec:
+  lifecycle: experimental
+  owner: eabdelghany
+  type: service
+  system: Mini-Devops-Project
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/techdocs-ref: dir:./bitbucket
+  title: Bitbucket
+  name: bitbucket
+spec:
+  lifecycle: experimental
+  owner: eabdelghany
+  type: service
+  system: Mini-Devops-Project
+---
+
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/techdocs-ref: dir:./jenkins
+  title: Jenkins
+  name: jenkins
+spec:
+  lifecycle: experimental
+  owner: eabdelghany
+  type: service
+  system: Mini-Devops-Project
+---
+
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/techdocs-ref: dir:./operators
+  title: Openshift Operators
+  name: operators
+spec:
+  lifecycle: experimental
+  owner: eabdelghany
+  type: service
+  system: Mini-Devops-Project
+
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  annotations:
+    backstage.io/techdocs-ref: dir:./sonarqube
+  title: SonarQube
+  name: sonarqube
+spec:
+  lifecycle: experimental
+  owner: eabdelghany
+  type: service
+  system: Mini-Devops-Project
